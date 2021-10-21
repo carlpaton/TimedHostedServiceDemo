@@ -25,7 +25,7 @@ namespace TimedHostedService.Worker
 
         public Task StartAsync(CancellationToken stoppingToken)
         {
-            _logger.LogInformation("StartAsync run");
+            _logger.LogInformation("STARTASYNC RUN");
             _timer = new Timer(DoWork, null, TimeSpan.Zero, TimeSpan.FromSeconds(_options.Value.PollPeriodSeconds));
 
             return Task.CompletedTask;
@@ -33,7 +33,7 @@ namespace TimedHostedService.Worker
 
         public Task StopAsync(CancellationToken stoppingToken)
         {
-            _logger.LogInformation("StopAsync run");
+            _logger.LogInformation("STOPASYNC RUN");
             _timer?.Change(Timeout.Infinite, 0);
 
             return Task.CompletedTask;
@@ -46,7 +46,7 @@ namespace TimedHostedService.Worker
 
         private async void DoWork(object state)
         {
-            _logger.LogInformation($"Event broker runs again in {_options.Value.PollPeriodSeconds} seconds.");
+            _logger.LogInformation($"EVENT BROKER RUNS AGAIN IN {_options.Value.PollPeriodSeconds} SECONDS.");
             await _eventBroker.ProcessAsync();
         }
     }
