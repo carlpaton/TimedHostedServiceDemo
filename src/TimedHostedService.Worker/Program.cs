@@ -30,7 +30,7 @@ namespace TimedHostedService.Worker
                 })
                 .ConfigureServices((hostBuilderContext, services) =>
                 {
-                    services.AddHostedService<CartEventsHostedService>();
+                    services.AddHostedService<TimedHostedService>();
 
                     services.Configure<ConnectionStringsOptions>(
                         hostBuilderContext.Configuration.GetSection(ConnectionStringsOptions.ConnectionStrings));
