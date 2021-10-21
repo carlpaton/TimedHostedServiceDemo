@@ -1,0 +1,1 @@
+docker run --name=mysql-timed-hosted-service -e MYSQL_ROOT_PASSWORD=root -d -p 3301:3306  mysql:8.0.26

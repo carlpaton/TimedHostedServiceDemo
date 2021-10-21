@@ -1,0 +1,1 @@
+npx json-server db.json -p 3331 --delay 1500

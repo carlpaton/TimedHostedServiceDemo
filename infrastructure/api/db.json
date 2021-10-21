@@ -1,0 +1,36 @@
+{
+	"events": [{
+			"id": 42,
+			"event_type": "CART_CREATE",
+			"user_id": "985e732f-bf00-4999-a1b6-873973f9b8ff",
+			"date_utc": "2021-09-08T04:56:19Z",
+			"items": [{
+					"id": "0760c3e1-1ceb-4a00-aede-328c66f729c7",
+					"quantity": 4,
+					"unit_cost": 1.99
+				},
+				{
+					"id": "117e986e-c08f-4483-8a8f-d5e1c0512650",
+					"quantity": 9,
+					"unit_cost": 0.29
+				}
+			]
+		},
+		{
+			"id": 43,
+			"event_type": "CART_UPDATE",
+			"user_id": "61af172f-ec9e-4789-848c-9a2bf3f16ba3",
+			"date_utc": "2021-09-08T04:59:30Z",
+			"items": [{
+				"id": "f4e0cc62-5be9-4ecc-82b4-4c90968a293c",
+				"quantity": 2,
+				"unit_cost": 3.25
+			}]
+		},
+		{
+			"id": 45,
+			"event_type": "CART_DELETE",
+			"user_id": "5d9e7c82-0341-4d1c-aba4-f62789d77e6f"
+		}
+	]
+}
